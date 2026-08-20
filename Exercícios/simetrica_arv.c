@@ -82,7 +82,7 @@ int main() {
     raiz->dir->esq = criaNo(27);
     raiz->dir->dir = criaNo(35);
 
-    printf("Percurso em ordem simetrica: ");
+    printf("Caminho: ");
 
     emOrdem(raiz);
 
