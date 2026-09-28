@@ -1,34 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef struct no {
+typedef struct arvore {
     int info;
-    struct no *esq;
-    struct no *dir;
-} TNo;
+    struct arvore *esq;
+    struct arvore *dir;
+} TArv;
 
-TNo* criaNo(int valor) {
-    TNo *novo = (TNo*) malloc(sizeof(TNo));
-
-    novo->info = valor;
-    novo->esq = NULL;
-    novo->dir = NULL;
-
-    return novo;
-}
-void preOrdem(TNo *raiz) {
-    if (raiz != NULL) {
-        printf("%d ", raiz->info);
-        preOrdem(raiz->esq);
-        preOrdem(raiz->dir);
-    }
-}
-
-void espelho(TNo *raiz) {
-    TNo *aux;
-
+void espelho(TArv *raiz) {
     if (raiz == NULL)
         return;
+
+    TArv *aux;
+
     aux = raiz->esq;
     raiz->esq = raiz->dir;
     raiz->dir = aux;
@@ -37,22 +21,48 @@ void espelho(TNo *raiz) {
     espelho(raiz->dir);
 }
 
+void imprime(TArv *raiz) {
+    if (raiz != NULL) {
+        printf("%d ", raiz->info);
+        imprime(raiz->esq);
+        imprime(raiz->dir);
+    }
+}
+
 int main() {
+    TArv *raiz = malloc(sizeof(TArv));
+    TArv *n2 = malloc(sizeof(TArv));
+    TArv *n3 = malloc(sizeof(TArv));
+    TArv *n4 = malloc(sizeof(TArv));
+    TArv *n5 = malloc(sizeof(TArv));
 
-    TNo *raiz = criaNo(70);
-    raiz->esq = criaNo(84);
-    raiz->dir = criaNo(32);
-    raiz->esq->esq = criaNo(4);
-    raiz->esq->dir = criaNo(200);
-    raiz->dir->esq = criaNo(89);
-    raiz->dir->dir = criaNo(13);
+    raiz->info = 1;
+    raiz->esq = n2;
+    raiz->dir = n3;
 
-    printf("Arvore original: ");
-    preOrdem(raiz);
+    n2->info = 2;
+    n2->esq = n4;
+    n2->dir = n5;
+
+    n3->info = 3;
+    n3->esq = NULL;
+    n3->dir = NULL;
+
+    n4->info = 4;
+    n4->esq = NULL;
+    n4->dir = NULL;
+
+    n5->info = 5;
+    n5->esq = NULL;
+    n5->dir = NULL;
+
+    printf("Antes: ");
+    imprime(raiz);
+
     espelho(raiz);
-    printf("\nArvore espelho: ");
-    preOrdem(raiz);
-    printf("\n");
+
+    printf("\nDepois: ");
+    imprime(raiz);
 
     return 0;
 }

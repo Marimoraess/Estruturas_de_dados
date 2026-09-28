@@ -5,10 +5,10 @@ typedef struct no {
     int info;
     struct no *esq;
     struct no *dir;
-} TNo;
+} TNoA;
 
-TNo* criaNo(int valor) {
-    TNo *novo = (TNo*) malloc(sizeof(TNo));
+TNoA* criaNo(int valor) {
+    TNoA *novo = (TNoA*) malloc(sizeof(TNoA));
 
     novo->info = valor;
     novo->esq = NULL;
@@ -17,12 +17,12 @@ TNo* criaNo(int valor) {
     return novo;
 }
 
-int cheia(TNo *raiz) {
+int cheia(TNoA *raiz) {
 
     if (raiz == NULL)
         return 1;
     if (raiz->esq == NULL && raiz->dir == NULL)
-        return 1;
+        return 1;                                 
     if (raiz->esq == NULL || raiz->dir == NULL)
         return 0;
     return cheia(raiz->esq) && cheia(raiz->dir);
@@ -30,7 +30,7 @@ int cheia(TNo *raiz) {
 
 int main() {
 
-    TNo *raiz = criaNo(100);
+    TNoA *raiz = criaNo(100);
 
     raiz->esq = criaNo(50);
     raiz->dir = criaNo(105);
