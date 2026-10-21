@@ -1,0 +1,10 @@
+NO INTERNO: (m = 2, pt pai = -1, aponta folha = 1)
+	[0]  15 [428]  25 [856]  -1 [-1]  -1  [-1] 
+
+NO FOLHA: (m = 4, pt pai = 0, pt prox = 856)
+	15, Jose
+	20, Mariana
+	21, Bruna
+	23, Bruno
+
+RESULTADO DA BUSCA: 428

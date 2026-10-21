@@ -1,0 +1,11 @@
+NO INTERNO: (m = 1, pt pai = -1, aponta folha = 0)
+	[48]  37 [96]  -1 [-1]  -1 [-1]  -1  [-1] 
+
+NO INTERNO: (m = 2, pt pai = 0, aponta folha = 1)
+	[1284]  39 [1712]  55 [2140]  -1 [-1]  -1  [-1] 
+
+NO FOLHA: (m = 2, pt pai = 96, pt prox = 1712)
+	37, Leonardo
+	38, Karla
+		
+RESULTADO DA BUSCA: 1284

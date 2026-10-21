@@ -1,0 +1,5 @@
+NO FOLHA: (m = 2, pt pai = -1, pt prox = -1)
+	10, Joao
+	13, Ana Maria
+		
+RESULTADO DA BUSCA: 0

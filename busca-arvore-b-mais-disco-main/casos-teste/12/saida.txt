@@ -1,0 +1,8 @@
+NO INTERNO: (m = 4, pt pai = -1, aponta folha = 1)
+	[0]  15 [428]  25 [856]  40 [1284]  70  [1712] 
+
+NO FOLHA: (m = 2, pt pai = 0, pt prox = -1)
+	70, Nicolas
+	77, Lina
+		
+RESULTADO DA BUSCA: 1712

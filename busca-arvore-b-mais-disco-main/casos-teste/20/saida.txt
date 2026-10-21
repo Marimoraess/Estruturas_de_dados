@@ -1,0 +1,11 @@
+NO INTERNO: (m = 1, pt pai = -1, aponta folha = 0)
+	[48]  37 [96]  -1 [-1]  -1 [-1]  -1  [-1] 
+
+NO INTERNO: (m = 2, pt pai = 0, aponta folha = 1)
+	[0]  15 [428]  25 [856]  -1 [-1]  -1  [-1] 
+
+NO FOLHA: (m = 2, pt pai = 48, pt prox = 1284)
+	25, Ronaldo
+	35, Marcela
+		
+RESULTADO DA BUSCA: 856

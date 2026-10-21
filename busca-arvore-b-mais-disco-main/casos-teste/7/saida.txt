@@ -1,0 +1,8 @@
+NO INTERNO: (m = 2, pt pai = -1, aponta folha = 1)
+	[0]  15 [428]  25 [856]  -1 [-1]  -1  [-1] 
+
+NO FOLHA: (m = 2, pt pai = 0, pt prox = 428)
+	10, Joao
+	13, Ana Maria
+		
+RESULTADO DA BUSCA: 0
