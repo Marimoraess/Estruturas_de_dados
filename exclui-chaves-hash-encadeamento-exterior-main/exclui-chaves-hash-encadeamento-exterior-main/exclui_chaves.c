@@ -111,9 +111,37 @@ void imprime_chave(int mat) {
  * Apenas os registros necessários devem ser examinados: a tabela não deve ser percorrida inteira
  * O espaço de cada registro excluído deve ser liberado com free
  */
+
 void exclui_chaves(Hash *tab, int m, int *chaves, int qtd_chaves) {
-    //TODO: Implementar essa funcao
+    int i;
+
+    for (i = 0; i < qtd_chaves; i++) {
+        int mat = chaves[i];
+        int h = hash(mat, m);
+
+        TAluno *p = tab[h];
+        TAluno *ant = NULL;
+
+        while (p != NULL) {
+            imprime_chave(p->matricula);
+
+            if (p->matricula == mat) {
+                if (ant == NULL) {
+                    tab[h] = p->prox;
+                } else {
+                    ant->prox = p->prox;
+                }
+
+                free(p);
+                break;
+            }
+
+            ant = p;
+            p = p->prox;
+        }
+    }
 }
+
 
 int main(void) {
     /* Essa função gera a saída que é usada nos testes. Ela NÃO DEVE SER MODIFICADA */
