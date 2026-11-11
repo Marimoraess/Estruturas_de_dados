@@ -1,0 +1,5 @@
+REGISTROS ACESSADOS:
+  1,         Davi,   3,  OCUPADO
+  8,          Eva,   0,  OCUPADO
+ 15,        Fabio,  -1,  OCUPADO
+RESULTADO: 0

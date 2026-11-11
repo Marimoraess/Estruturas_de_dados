@@ -1,0 +1,3 @@
+REGISTROS ACESSADOS:
+ 59,        Maria,   3,  OCUPADO
+RESULTADO: 1

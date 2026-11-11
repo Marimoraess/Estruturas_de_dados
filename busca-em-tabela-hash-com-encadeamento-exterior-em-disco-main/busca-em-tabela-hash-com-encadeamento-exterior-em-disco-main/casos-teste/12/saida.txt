@@ -1,0 +1,4 @@
+REGISTROS ACESSADOS:
+ 59,        Maria,   3,  OCUPADO
+ 17,      Vanessa,   5,  OCUPADO
+RESULTADO: 3

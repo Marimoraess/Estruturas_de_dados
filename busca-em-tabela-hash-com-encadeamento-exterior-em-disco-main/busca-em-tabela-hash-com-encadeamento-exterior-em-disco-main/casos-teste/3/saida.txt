@@ -1,0 +1,3 @@
+REGISTROS ACESSADOS:
+ 49,         Joao,  -1,  OCUPADO
+RESULTADO: 0

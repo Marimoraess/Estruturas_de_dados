@@ -1,0 +1,4 @@
+REGISTROS ACESSADOS:
+  7,         Gina,   1, LIBERADO
+ 14,          Bia,  -1,  OCUPADO
+RESULTADO: 1

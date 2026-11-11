@@ -1,0 +1,5 @@
+REGISTROS ACESSADOS:
+ 59,        Maria,   3,  OCUPADO
+  3,        Janio,   5, LIBERADO
+ 87,     Mauricio,  -1,  OCUPADO
+RESULTADO: -1
